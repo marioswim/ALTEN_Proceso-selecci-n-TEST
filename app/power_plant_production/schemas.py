@@ -37,7 +37,7 @@ schema = {
                         "description":"Plant type",
                         "minlength":4
                     },
-                    "eficiency":{
+                    "efficiency":{
                         "type":"number",
                         "description":"Plant efficiency",
                         "minimum":0
