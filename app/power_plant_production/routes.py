@@ -1,11 +1,11 @@
 from flask import request, jsonify
-
+from flask_expects_json import expects_json
 from .schemas import schema
 from . import power_plant_production_bp
 
 
 @power_plant_production_bp.route('/productionplain', methods=['POST'])
-
+@expects_json(schema)
 def power_plant_production():
     """
     API callback to calculate the power plants producions
